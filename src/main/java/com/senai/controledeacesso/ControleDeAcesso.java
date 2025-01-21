@@ -430,7 +430,4 @@ ControleDeAcesso {
             }
         }
     }
-    public static void amanahecer () {
-
-    }
 }
