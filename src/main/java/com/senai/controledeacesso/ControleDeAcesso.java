@@ -21,16 +21,15 @@ ControleDeAcesso {
     private static final File registroDeAcesso = new File(pastaControleDeAcesso, "registroDeAcesso.txt");
 
     static String[] cabecalho = {"ID", "IdAcesso", "Nome", "Telefone", "Email", "Imagem"};
-
+/// //////////////////////////////////////////////////////
     static String[] infoRegistro = {"Nome", "Hora", "Imagem"};
 
     static String[][] matrizCadastro = {{"", ""}};
     public static String[][] matrizRegistrosDeAcesso = {{"", "", ""}};// inicia a matriz com uma linha e duas colunas com "" para que na primeira vez não apareça null na tabela de registros
-
+/// /////////////////////////////////////////////////////////////////
     static volatile boolean modoCadastrarIdAcesso = false;
     static int idUsuarioRecebidoPorHTTP = 0;
     static String dispositivoRecebidoPorHTTP = "Disp1";
-
     static String brokerUrl = "tcp://localhost:1883";  // Exemplo de
     static String topico = "IoTKIT1/UID";
 
